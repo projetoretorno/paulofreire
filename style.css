@@ -1,0 +1,411 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+img#logotipo {
+    margin: 25px 0px;
+}
+
+
+h3 {
+    font: bold 2em 'Prata', serif; 
+    text-align: left;
+}
+
+h4  {
+    margin: 10px 0px;
+    font: normal 1.2em 'Prata', serif; 
+    text-align: justify;
+
+}
+
+
+main {
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 700px;
+    margin-top: 20px;   
+    padding: 0px 15px;
+}
+
+p {
+    margin: 10px 0px;
+    text-indent: 25px;
+    text-align: justify;
+    font-family: 'Antic Slab', serif;
+}
+
+
+div.video { 
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
+}
+
+div.video:hover { 
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.486);
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img#abrir-menu {
+    display: none;
+}
+
+menu {
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul li {
+    display: inline;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+menu > ul li > a {
+    display: inline-block;
+    width: 92px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+    font: normal 0.9em 'Prata', serif;
+}
+
+menu > ul li > a:hover {
+    background-color: rgb(241, 241, 241);
+    color: black;
+}
+
+
+.atual {
+    background-color: rgb(241, 241, 241);
+    color: black;
+}
+
+img#foto-pf {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: -20px;
+}
+
+main#artigo-pf > h3 {
+    margin-top: 40px;
+}
+
+div.pausa {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+    padding: 10px 4%;
+    margin: 15px 3%;
+    font-size: 1.1em;
+}
+
+p.ref-fala {
+    text-align: right;
+}
+
+a.apf {
+    color: black;
+    text-decoration: underline;
+}
+
+a.apf:hover {
+    color: rgb(17, 17, 17);
+    text-shadow: 0.8px 0.8px 0.8px black;
+    
+}
+
+a.apf:visited {
+    color: #712aaf;
+    text-shadow: 0.2px 0.2px 0.2px #000000;
+    
+}
+
+.saber-mais {
+    list-style-type: none;
+}
+
+.saber-mais > li{
+    padding: 8px;
+}
+
+.mais {
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+    display: block;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+    font: normal 0.95em 'Antic Slab', serif;
+}
+
+.mais:hover {
+    background-color: rgba(245, 245, 245, 0.603);
+    text-decoration: underline;
+}
+
+.mais:visited {
+    color: #712aaf;
+}
+
+
+h1#integrantes {
+    font: bold 2em 'Prata', serif; 
+    text-align: center;
+    margin: 5px;
+}
+
+h2#integrantes {
+    font: bold 1.5em 'Prata', serif; 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.nomes {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/*INTEGRANTES FOTO-ESQUERDA*/
+div.foto-left {
+    display: inline-block;
+    width: 45%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+div.foto-left > img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    width: auto;
+}
+
+div.info-left {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    float: right;
+    width: 45%;
+    vertical-align: middle;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+div.info-left > h1 {
+    display: inline;
+    text-align: center;
+    font: bold 1.5em 'Prata', serif;
+    margin: 25px;
+}
+
+
+/*INTEGRANTES FOTO-DIREITA*/
+div.foto-right {
+    display: inline-block;
+    width: 45%;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+div.foto-right > img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    width: auto;
+}
+
+div.info-right {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    float: left;
+    width: 45%;
+    vertical-align: middle;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+div.info-right > h1 {
+    display: inline;
+    text-align: center;
+    font: bold 1.5em 'Prata', serif;
+    margin: 25px;
+}
+
+
+@media(max-width: 700px) {
+
+/*INTEGRANTES FOTO-ESQUERDA*/
+    div.foto-left {
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    div.foto-left > img {
+        display: block;
+        width: auto;
+        margin: auto;
+        max-width: 300px;
+    }
+    
+    div.info-left {
+        display: block;
+        height: fit-content;
+        float: none;
+        width: 100%;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    div.info-left > h1 {
+        display: block;
+        text-align: center;
+        font: bold 1.6em 'Prata', serif; 
+    }
+
+
+    /*INTEGRANTES FOTO-DIREITA*/
+    div.foto-right {
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    div.foto-right > img {
+        display: block;
+        width: auto;
+        margin: auto;
+        max-width: 300px;
+    }
+    
+    div.info-right {
+        display: block;
+        height: fit-content;
+        float: none;
+        width: 100%;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    div.info-right > h1.nome-left {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        font: bold 1.6em 'Prata', serif; 
+    }
+
+    .nomes {
+        display: block;
+    }
+
+
+    
+    /*menu pequeno*/
+
+    img#abrir-menu {
+        display: block;
+        padding-left: 85%;
+        padding-right: 5%;
+        margin: auto;
+        width: auto;
+        max-width: 30px;
+    }
+
+    menu {
+        width: 100%;
+        background-color: rgb(2, 2, 2);
+    }
+    
+
+
+    menu > ul {
+        display: none;
+    }
+    
+    menu > ul li {
+        display: none;
+    }
+    
+    menu > ul li > a {
+        display: none;
+    }
+    
+    menu > ul li > a:hover {
+        display: none;
+    }
+
+
+
+    
+    menu:hover > ul {
+        display: block;
+        list-style-type: none;
+    }
+    
+    menu:hover > ul li {
+        display: block;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+    
+    menu:hover > ul li > a {
+        display: block;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        transition: 0.3s;
+        font: normal 0.9em 'Prata', serif;
+    }
+    
+    menu:hover > ul li > a:hover {
+        background-color: rgb(241, 241, 241);
+        color: black;
+    }
+
+    menu:hover > ul li > a.atual {
+        background-color: rgb(241, 241, 241);
+        color: black;
+    }
+
+}
