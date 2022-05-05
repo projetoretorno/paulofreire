@@ -277,15 +277,13 @@ div.info-right > h1 {
 /*INTEGRANTES FOTO-ESQUERDA*/
     div.foto-left {
         display: block;
-        width: fit-content;
+        width: auto;
         margin: auto;
     }
     
     div.foto-left > img {
         display: block;
-        width: auto;
-        margin: auto;
-        max-width: 300px;
+        width: 100%;
     }
     
     div.info-left {
@@ -313,9 +311,7 @@ div.info-right > h1 {
     
     div.foto-right > img {
         display: block;
-        width: auto;
-        margin: auto;
-        max-width: 300px;
+        width: 100%;
     }
     
     div.info-right {
@@ -327,7 +323,7 @@ div.info-right > h1 {
         text-align: center;
     }
     
-    div.info-right > h1.nome-left {
+    div.info-right > h1.nome-right {
         display: block;
         margin-bottom: 10px;
         text-align: center;
@@ -407,5 +403,18 @@ div.info-right > h1 {
         background-color: rgb(241, 241, 241);
         color: black;
     }
+
+}
+
+@media(max-width: 340px) {
+
+    div.info-right > h1.nome-right {
+        font: bold 1.3em 'Prata', serif; 
+    }
+
+    div.info-left > h1.nome-left {
+        font: bold 1.3em 'Prata', serif; 
+    }
+
 
 }
