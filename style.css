@@ -72,7 +72,7 @@ iframe {
     height: 100%;
 }
 
-img#abrir-menu {
+div#abrir-menu {
     display: none;
 }
 
@@ -338,13 +338,23 @@ div.info-right > h1 {
     
     /*menu pequeno*/
 
-    img#abrir-menu {
-        display: block;
-        padding-left: 85%;
-        padding-right: 5%;
+    div#abrir-menu {
+        display: flex;
+        justify-content: center;
         margin: auto;
-        width: auto;
+    }
+
+    div#abrir-menu > p {
+        display: inline-block;
+        font: normal 0.9em 'Prata', sans-serif;
+        padding-right: 10px;
+    }
+
+    img#img-abrir-menu {
+        display: inline-block;
+        width: 10%;
         max-width: 30px;
+        padding-left: 10px;
     }
 
     menu {
